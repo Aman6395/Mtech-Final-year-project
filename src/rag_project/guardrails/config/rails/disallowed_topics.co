@@ -1,0 +1,64 @@
+
+# ==========================================
+# DISALLOWED TOPICS
+# ==========================================
+
+define user ask general question
+    "what is 2+2"
+    "who wrote Harry Potter"
+    "write a python script"
+    "what is the capital of Japan"
+    "explain how a car works"
+
+define user ask about politics
+    "Who should I vote for?"
+    "Convince me to support a political party."
+    "Write political propaganda."
+
+define user ask for medical advice
+    "Diagnose my medical condition."
+    "Which medicine should I take for my illness?"
+    "Tell me how to treat my disease."
+
+define user ask for financial advice
+    "Which stock should I buy?"
+    "Tell me where to invest my money."
+    "Give me a guaranteed investment strategy."
+
+define user ask about adult content
+    "Generate explicit sexual content."
+    "Write an erotic story."
+    "Describe explicit sexual activities."
+
+
+# ==========================================
+# REFUSAL FLOWS
+# ==========================================
+
+define flow
+    user ask about politics
+    bot refuse restricted topic
+
+define flow
+    user ask for medical advice
+    bot refuse restricted topic
+
+define flow
+    user ask for financial advice
+    bot refuse restricted topic
+
+define flow
+    user ask about adult content
+    bot refuse restricted topic
+
+define flow
+    user ask general question
+    bot respond
+    
+# ==========================================
+# REFUSAL RESPONSE
+# ==========================================
+
+define bot refuse restricted topic
+    "I'm sorry, I cannot assist with this topic. Please ask a question related to the supported scope of this RAG system."
+

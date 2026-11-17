@@ -45,7 +45,7 @@ models:
     model:  gemini-3.5-flash-lite
     parameters:
       base_url: https://generativelanguage.googleapis.com/v1beta/openai/
-      api_key: AQ.Ab8RN6I4Frs5y9H2hMN4BXZAnMgNR3qBH1HDKE7KcdUelPC55Q
+      api_key: your-gemini-key
 
 rails:
   input:

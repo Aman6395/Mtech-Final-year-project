@@ -6,3 +6,4 @@ __pycache__/
 .ipynb_checkpoints/
 .vscode/
 2024AC05737.pdf
+.DS_Store

@@ -5,5 +5,5 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 .vscode/
-2024AC05737.pdf
 .DS_Store
+sample.ipynb
